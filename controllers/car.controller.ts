@@ -32,4 +32,3 @@ export const getCars = async (req: Request, res: Response) => {
       : res.status(500).json({ success: false, message: "Unexpected error" });
   }
 };
-
