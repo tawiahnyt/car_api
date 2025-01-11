@@ -23,7 +23,7 @@ export const getCars = async (req: Request, res: Response) => {
     // Build a dynamic query object based on the available parameters
     const query: any = {};
 
-    if (make) query.make = toTitleCase(make);
+    if (make) query.make = make;
     if (model) query.model = toTitleCase(model);
     if (year) query.year = year;
     if (fuel_type) query.fuel_type = toTitleCase(fuel_type);
