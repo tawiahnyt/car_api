@@ -1,8 +1,8 @@
 /** @format */
 
 import express, { Application } from "express";
-import { connectionDB } from "./config/db";
-import carRoutes from "./routes/cars.route";
+import { connectionDB } from "../config/db";
+import carRoutes from "../routes/cars.route";
 
 const app: Application = express();
 
