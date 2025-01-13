@@ -5,12 +5,12 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-// const MongoDB_URI = process.env.MONGODB_URI;
 
 export const connectionDB = async () => {
   try {
     const conn = await mongoose.connect(
       `mongodb+srv://tawiahin4k:PrOxyOs35MQBO2Ma@cluster0.7xoac.mongodb.net/cars?retryWrites=true&w=majority&appName=Cluster0`
+      // "mongodb://localhost:27017/cars"
     );
     console.log(`MongoDB connected: ${conn.connection.host}`);
   } catch (error) {

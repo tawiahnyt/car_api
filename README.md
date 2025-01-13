@@ -55,47 +55,47 @@ Once the server is running, you can interact with the API using an HTTP client l
    ```
 
 ### Get Cars by Make
-- **URL**: `/api/v1/cars/make`
+- **URL**: `/api/v1/cars`
 - **Method**: `GET`
 - **Query Parameters**:
   - `make` (optional): Car make to filter by.
 
 - **Example**:
    ```sh
-   curl -X GET "http://localhost:3000/api/v1/cars/make?make=toyota"
+   curl -X GET "http://localhost:3000/api/v1/cars?make=toyota"
    ```
 
 ### Get Cars by Model
-- **URL**: `/api/v1/cars/model`
+- **URL**: `/api/v1/cars`
 - **Method**: `GET`
 - **Query Parameters**:
   - `model` (optional): Car model to filter by.
 
 - **Example**:
    ```sh
-   curl -X GET "http://localhost:3000/api/v1/cars/model?model=corolla"
+   curl -X GET "http://localhost:3000/api/v1/cars?model=corolla"
    ```
 
 ### Get Cars by Year
-- **URL**: `/api/v1/cars/year`
+- **URL**: `/api/v1/cars`
 - **Method**: `GET`
 - **Query Parameters**:
   - `year` (optional): Year to filter by.
 
 - **Example**:
    ```sh
-   curl -X GET "http://localhost:3000/api/v1/cars/year?year=2020"
+   curl -X GET "http://localhost:3000/api/v1/cars?year=2020"
    ```
 
 ### Get Cars by Fuel Type
-- **URL**: `/api/v1/cars/fuel_type`
+- **URL**: `/api/v1/cars`
 - **Method**: `GET`
 - **Query Parameters**:
   - `fuel_type` (optional): Fuel type to filter by.
 
 - **Example**:
    ```sh
-   curl -X GET "http://localhost:3000/api/v1/cars/fuel_type?fuel_type=gasoline"
+   curl -X GET "http://localhost:3000/api/v1/cars?fuel_type=gasoline"
    ```
 
 ### Get Cars with Multiple Parameters

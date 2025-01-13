@@ -33,6 +33,7 @@ export const getCars = async (req: Request, res: Response) => {
 
     // Send the response
     res.status(200).json(cars);
+    console.log('cars');
   } catch (error) {
     // Handle errors
     error instanceof Error
