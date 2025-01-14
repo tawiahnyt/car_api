@@ -51,7 +51,7 @@ Once the server is running, you can interact with the API using an HTTP client l
   
 - **Example**:
    ```sh
-   curl -X GET "http://localhost:3000/api/v1/cars?limit=15"
+   curl -X GET "http://localhost:3000/api/v1/cars?limit=30"
    ```
 
 ### Get Cars by Make

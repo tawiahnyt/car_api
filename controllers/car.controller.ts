@@ -23,17 +23,16 @@ export const getCars = async (req: Request, res: Response) => {
     // Build a dynamic query object based on the available parameters
     const query: any = {};
 
-    if (make) query.make = make;
-    if (model) query.model = toTitleCase(model);
+    if (make) query.make = make.toLowerCase();
+    if (model) query.model = model.toLowerCase();
     if (year) query.year = year;
-    if (fuel_type) query.fuel_type = toTitleCase(fuel_type);
+    if (fuel_type) query.fuel_type = fuel_type.toLowerCase();
 
     // Fetch cars from the database based on the constructed query
     const cars = await Car.find(query).limit(limit);
 
     // Send the response
     res.status(200).json(cars);
-    console.log('cars');
   } catch (error) {
     // Handle errors
     error instanceof Error
